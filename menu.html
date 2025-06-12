@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Bites | Menu</title>
+
+   <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background-color: #8B0000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.menu-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #f8f8f8;
+}
+
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 10px;
+}
+
+.menu-card {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+}
+
+.menu-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.menu-card h3 {
+  margin: 10px 0 5px ;
+}
+
+.menu-card p {
+  color: #333;
+  font-weight: bold;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-card {
+    width: 90%;
+  }
+}
+
+   </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Delicious Bites</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="chefs.html">Chefs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-header">
+    <h2>Our Delicious Menu</h2>
+    <p>Explore our tasty food items</p>
+  </section>
+
+  <section class="menu-section">
+    <div class="menu-card">
+      <img src="https://purepng.com/public/uploads/medium/grill-chicken-spicy-c4j.png" alt="Grilled Chicken" />
+      <h3>Grilled Chicken</h3>
+      <p>₹250</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://vistapointe.net/images/veggie-burger-6.jpg" alt="Veggie Burger" />
+      <h3>Veggie Burger</h3>
+      <p>₹150</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://lakwimana.com/images/veg-spicy-paneer-tikka-pizzas-500x500.jpg" alt="Paneer Pizza" />
+      <h3>Paneer Pizza</h3>
+      <p>₹300</p>
+    </div>
+
+    <div class="menu-card">
+      <img src="http://floursandfrostings.com/wp-content/uploads/2017/01/IMG_20170104_003650_972-1-1024x1024.jpg" alt="Choco Lava Cake" />
+      <h3>Choco Lava Cake</h3>
+      <p>₹100</p>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

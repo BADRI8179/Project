@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Bites | About</title>
+   <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+.main-header {
+  background: #c0392b;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+.about-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.about-section h2 {
+  color: #c0392b;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.about-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.main-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+@media (max-width: 425px) {
+  .main-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-nav a {
+    font-size: 0.9rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.25rem;
+  }
+}
+
+.about-section {
+  padding: 2rem;
+  background-color: #fffdf6;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    padding: 1rem;
+  }
+
+  .about-section p {
+    padding: 0 1rem;
+  }
+}
+
+   </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Delicious Bites</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="chefs.html">Chefs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Delicious Bites</h2>
+        <p>We are passionate about bringing you the best food made with love and tradition. Our chefs specialize in authentic dishes using locally sourced ingredients to provide you with the most flavorful experience.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://impeccabuild.com.au/wp-content/uploads/2020/09/Restaurant-Interior-Design-Themes-ImpeccaBuild-5-scaled.jpg" alt="Our Restaurant" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

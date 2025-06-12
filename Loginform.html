@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+   <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-section {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #2193b0;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2193b0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0e6079;
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.register-link a {
+  color: #2193b0;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+
+  .login-container h2 {
+    font-size: 20px;
+  }
+}
+
+   </style>
+</head>
+<body>
+  <section class="login-section">
+    <div class="login-container">
+      <h2>Member Login</h2>
+      <p>Access your account</p>
+      <form action="index.html" method="get">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p class="register-link">Don't have an account? <a href="#">Register here</a></p>
+    </div>
+  </section>
+</body>
+</html>

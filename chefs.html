@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Bites | Our Chefs</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff8f2;
+  color: #333;
+}
+
+.main-header {
+  background: #e67e22;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.main-header h1 {
+  margin: 0;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.chefs-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.chefs-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d35400;
+}
+
+.chefs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.chef-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.chef-card:hover {
+  transform: translateY(-5px);
+}
+
+.chef-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.chef-card h3 {
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+.chef-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.main-footer {
+  background: #e67e22;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chefs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .chefs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Delicious Bites</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="chefs.html" class="active">Chefs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="chefs-section">
+    <h2>Meet Our Chefs</h2>
+    <div class="chefs-grid">
+      <div class="chef-card">
+        <img src="http://foodanddrink.scotsman.com/wp-content/uploads/2015/08/andrew-fairlie24.jpg" alt="Chef A">
+        <h3>Chef Anil</h3>
+        <p>Head Chef</p>
+      </div>
+      <div class="chef-card">
+        <img src="https://img.freepik.com/premium-photo/top-wear-chefs-culinary-vest-designed-both-men-women-stain-re-creative-design-fashion-idea_655090-987708.jpg" alt="Chef B">
+        <h3>Chef Priya</h3>
+        <p>Pastry Specialist</p>
+      </div>
+      <div class="chef-card">
+        <img src="https://img.freepik.com/premium-photo/bustling-kitchen-there-stood-remarkably-attractive-chef-donning-traditional-chefs-cap_1032785-3585.jpg" alt="Chef C">
+        <h3>Chef Ramesh</h3>
+        <p>Grill Master</p>
+      </div>
+      <div class="chef-card">
+        <img src="https://www.dusttexhonolulu.com/wp-content/uploads/2018/12/chef-uniforms.jpg" alt="Chef D">
+        <h3>Chef Sneha</h3>
+        <p>Vegan Expert</p>
+      </div>
+      <div class="chef-card">
+        <img src="https://img.freepik.com/premium-photo/bustling-kitchen-there-stood-remarkably-attractive-chef-donning-traditional-chefs-cap_1032785-3573.jpg" alt="Chef E">
+        <h3>Chef Arjun</h3>
+        <p>Pizza Specialist</p>
+      </div>
+      <div class="chef-card">
+        <img src="https://dusbus.com/wp-content/uploads/2020/09/RavinderBhogal-768x576.jpg" alt="Chef F">
+        <h3>Chef Kavya</h3>
+        <p>Salad Artist</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

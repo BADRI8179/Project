@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicious Bites | Gallery</title>
+  <!-- <link rel="stylesheet" href="gallery.css" /> -->
+   <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+.main-header {
+  background-color: #ff914d;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.main-header h1 {
+  font-size: 2rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav a.active {
+  text-decoration: underline;
+}
+
+.gallery-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  background-color: #fff0e6;
+}
+
+.gallery-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-section {
+  padding: 1.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.main-footer {
+  background-color: #ff914d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1,1fr);
+}
+  .gallery-header h2 {
+    font-size: 1.5rem;
+  }
+}
+   </style>
+</head>
+<body>
+
+  <header class="main-header">
+    <h1>Delicious Bites</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="chefs.html">Chefs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery-header">
+    <h2>Our Food Gallery</h2>
+    <p>A glimpse into our delicious world</p>
+  </section>
+
+  <section class="gallery-section">
+    <div class="gallery-grid">
+      <img src="https://www.pngarts.com/files/10/Spicy-Food-Items-PNG-Image.png" alt="Dish 1">
+      <img src="https://s1.1zoom.me/big0/372/Meat_products_Shashlik_French_fries_White_521249_1280x866.jpg" alt="Dish 2">
+      <img src="https://www.seekpng.com/png/full/25-255623_plate-png.png" alt="Dish 3">
+      <img src="https://sulthansbiriyani.in/wp-content/uploads/2022/11/Tandoori-chicken-1.jpg" alt="Dish 4">
+      <img src="https://www.pngall.com/wp-content/uploads/8/Restaurant-Food-PNG.png" alt="Dish 5">
+      <img src="https://www.fryingpanadventures.com/wp-content/uploads/2020/10/image-137-scaled-e1604152201367.jpeg" alt="Dish 6">
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Delicious Bites. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
