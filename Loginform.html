@@ -20,13 +20,13 @@ body {
   justify-content: center;
 }
 
-.login-section {
+.section {
   width: 100%;
   max-width: 400px;
   padding: 20px;
 }
 
-.login-container {
+.container {
   background: white;
   padding: 40px 30px;
   border-radius: 12px;
@@ -34,37 +34,39 @@ body {
   text-align: center;
 }
 
-.login-container h2 {
+.container h2 {
   color: #333;
   margin-bottom: 10px;
 }
 
-.login-container p {
+.container p {
   color: #666;
+  font-size: large;
   margin-bottom: 25px;
 }
 
-.form-group {
+.form {
   text-align: left;
   margin-bottom: 20px;
 }
 
-.form-group label {
+.form label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
   color: #444;
 }
 
-.form-group input {
+.form input {
   width: 100%;
+  font-size: medium;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
   transition: border-color 0.3s ease;
 }
 
-.form-group input:focus {
+.form input:focus {
   border-color: #2193b0;
   outline: none;
 }
@@ -78,6 +80,7 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-size: medium;
   transition: background-color 0.3s ease;
 }
 
@@ -85,27 +88,28 @@ button:hover {
   background-color: #0e6079;
 }
 
-.register-link {
+.register {
   margin-top: 20px;
   font-size: 0.9em;
   color: #555;
 }
 
-.register-link a {
+.register a {
   color: #2193b0;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
-.register-link a:hover {
+.register a:hover {
   text-decoration: underline;
 }
 
 @media (max-width: 480px) {
-  .login-container {
+  .container {
     padding: 30px 20px;
   }
 
-  .login-container h2 {
+  .container h2 {
     font-size: 20px;
   }
 }
@@ -113,22 +117,22 @@ button:hover {
    </style>
 </head>
 <body>
-  <section class="login-section">
-    <div class="login-container">
+  <section class="section">
+    <div class="container">
       <h2>Member Login</h2>
       <p>Access your account</p>
       <form action="main.html" method="get">
-        <div class="form-group">
+        <div class="form">
           <label for="username">Username</label>
           <input type="text" id="username" name="username" placeholder="Enter your username" required />
         </div>
-        <div class="form-group">
+        <div class="form">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Enter your password" required />
         </div>
         <button type="submit">Login</button>
       </form>
-      <p class="register-link">Don't have an account? <a href="#">Register here</a></p>
+      <p class="register">Don't have an account? <a href="#">Register here</a></p>
     </div>
   </section>
 </body>
