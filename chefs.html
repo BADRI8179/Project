@@ -44,6 +44,18 @@
 .main-nav a:hover {
   text-decoration: underline;
 }
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}
 
 .chefs-section {
   padding: 2rem;
@@ -96,6 +108,23 @@
   margin-top: 2rem;
 }
 @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .main-nav li {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .menu-toggle:checked + .menu-icon + .main-nav ul {
+    display: flex;
+  }
   .chefs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -111,6 +140,8 @@
 
   <header class="main-header">
     <h1>Delicious Bites</h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <nav class="main-nav">
       <ul>
         <li><a href="main.html">Home</a></li>

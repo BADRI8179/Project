@@ -87,13 +87,41 @@
   background-color: #333;
   color: white;
 }
+.menu-toggle {
+  display: none;
+}
 
-@media (max-width: 768px) {
-  .main-nav ul {
-    flex-direction: column;
-    align-items: center;
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
   }
 
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .main-nav li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .menu-toggle:checked + .menu-icon + .main-nav ul {
+    display: flex;
+  }
   .menu-section {
     flex-direction: column;
     align-items: center;
@@ -110,6 +138,8 @@
 
   <header class="main-header">
     <h1>Delicious Bites</h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <nav class="main-nav">
       <ul>
         <li><a href="main.html">Home</a></li>

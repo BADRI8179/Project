@@ -60,11 +60,39 @@
   background-color: #333;
   color: white;
 }
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 40px;
+}
 
 @media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
   .nav ul {
+    display: none;
     flex-direction: column;
-    align-items: center;
+    background-color: #333;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu-toggle:checked + .menu-icon + .nav ul {
+    display: flex;
+  }
+
+  .nav li {
+    text-align: center;
+    padding: 10px 0;
   }
 
   .hero-section {
@@ -82,6 +110,8 @@
 
   <header class="header">
     <h1>Delicious Bites</h1>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <nav class="nav">
       <ul>
         <li><a href="main.html" class="active">Home</a></li>
